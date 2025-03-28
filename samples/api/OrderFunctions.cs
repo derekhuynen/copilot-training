@@ -72,10 +72,15 @@ namespace api
 
                 // Filter orders by the provided companyId.
                 var filteredOrders = _ordersService.FilterByCompany(companyId, orders);
+
+                //call the get toal function from the Order Service 
+                double totalAmount = _ordersService.CalculateTotalAmount(filteredOrders);
+
+
                 var orderResponse = new OrderResponse
                 {
                     Orders = filteredOrders,
-                    TotalAmount = 0
+                    TotalAmount = totalAmount
                 };
 
                 var response = req.CreateResponse(HttpStatusCode.OK);

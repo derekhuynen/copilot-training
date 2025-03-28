@@ -1,14 +1,36 @@
-import { Box } from "@mui/material"
+import { Box, Card, CardContent, Typography, Button } from "@mui/material";
 
-const OrderCard = () => {
-
-
-    return (
-        <Box sx={{}} id="order-card" role="presentation">
-
-
-        </Box >
-    )
+interface OrderCardProps {
+    orderId: string;
+    customerName: string;
+    orderDate: string;
+    totalAmount: string;
 }
 
-export default OrderCard
+const OrderCard = ({ orderId, customerName, orderDate, totalAmount }: OrderCardProps) => {
+    return (
+        <Card sx={{ maxWidth: 400, margin: 2, boxShadow: 3 }}>
+            <CardContent>
+                <Typography variant="h6" component="div" gutterBottom>
+                    Order ID: {orderId}
+                </Typography>
+                <Typography variant="body1" color="text.secondary">
+                    Customer: {customerName}
+                </Typography>
+                <Typography variant="body2" color="text.secondary">
+                    Date: {orderDate}
+                </Typography>
+                <Typography variant="body1" color="text.primary" sx={{ marginTop: 1 }}>
+                    Total: {totalAmount}
+                </Typography>
+                <Box sx={{ marginTop: 2, textAlign: "right" }}>
+                    <Button variant="contained" color="primary" size="small">
+                        View Details
+                    </Button>
+                </Box>
+            </CardContent>
+        </Card>
+    );
+};
+
+export default OrderCard;

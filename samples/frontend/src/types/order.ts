@@ -8,5 +8,5 @@ export type Order = {
 
 export type OrderRequest = {
   orders: Order[];
-  total: number;
+  totalAmount: number;
 };

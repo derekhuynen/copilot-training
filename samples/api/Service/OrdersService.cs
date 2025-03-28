@@ -14,6 +14,7 @@ namespace api.Services
     {
         List<Order> FetchOrders();
         List<Order> FilterByCompany(string companyId, List<Order> orders);
+        double CalculateTotalAmount(List<Order> orders);
     }
 
     public class OrdersService : IOrdersService
@@ -55,5 +56,22 @@ namespace api.Services
 
         // Calculate the total amount of orders.
 
+        public double CalculateTotalAmount(List<Order> orders)
+        {
+            if (orders == null || orders.Count == 0)
+            {
+                _logger.LogWarning("No orders provided for total amount calculation.");
+                return 0;
+            }
+
+            double totalAmount = 0;
+            foreach (var order in orders)
+            {
+                totalAmount += order.TotalAmount;
+            }
+
+            _logger.LogInformation($"Total amount calculated: {totalAmount}");
+            return totalAmount;
+        }
     }
 }

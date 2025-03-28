@@ -89,3 +89,17 @@ CREATE TABLE posts (
   FOREIGN KEY (userId) REFERENCES users(id)
 );
 ```
+
+### Other Example
+
+```plaintext
+
+I want to generate a Code Chage Document in markdown format.
+
+At the top of the file it should list all the files that have been changed.
+
+Then below that go into to details about what changes were made to each file.
+
+then Give a brief summary all all the changes that were made
+
+```
