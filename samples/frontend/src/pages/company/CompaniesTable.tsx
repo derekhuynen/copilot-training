@@ -10,7 +10,6 @@ import GenericDataGrid from 'components/generics/GenericDataGrid';
 import { Company } from 'types/company';
 import { useCompanies } from 'store/useCompanies';
 
-
 const CompaniesTable = ({ search }: { search?: string }) => {
   const nav = useNavigate();
   const { openGlobalModal, closeGlobalModal } = useGlobalModal();
@@ -105,8 +104,10 @@ const CompaniesTable = ({ search }: { search?: string }) => {
               gap: 1,
               width: '100%',
             }}
+            data-testid="action-cell"
           >
             <IconButton
+              data-testid="edit-button"
               onClick={e => {
                 e.stopPropagation();
                 handleEdit(params.row);
@@ -119,6 +120,7 @@ const CompaniesTable = ({ search }: { search?: string }) => {
               />
             </IconButton>
             <IconButton
+              data-testid="delete-button"
               onClick={e => {
                 e.stopPropagation();
                 handleDelete(params.row.id);
@@ -137,12 +139,14 @@ const CompaniesTable = ({ search }: { search?: string }) => {
   ];
 
   return (
-    <GenericDataGrid
-      rows={filteredCompanies || []}
-      columns={columns}
-      onRowClick={onRowClick}
-      loading={false}
-    />
+    <div data-testid="companies-table">
+      <GenericDataGrid
+        rows={filteredCompanies || []}
+        columns={columns}
+        onRowClick={onRowClick}
+        loading={false}
+      />
+    </div>
   );
 };
 
