@@ -9,7 +9,10 @@ interface OrderCardProps {
 
 const OrderCard = ({ orderId, customerName, orderDate, totalAmount }: OrderCardProps) => {
     return (
-        <Card sx={{ maxWidth: 400, margin: 2, boxShadow: 3 }}>
+        <Card
+            id="order-card"
+            role="presentation"
+            sx={{ maxWidth: 400, margin: 2, boxShadow: 3 }}>
             <CardContent>
                 <Typography variant="h6" component="div" gutterBottom>
                     Order ID: {orderId}
