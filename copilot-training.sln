@@ -16,6 +16,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "net8.0", "net8.0", "{38894E
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkerExtensions", "samples\api\obj\Debug\net8.0\WorkerExtensions\WorkerExtensions.csproj", "{9ED8EAA7-B84F-B8E0-A377-E30BC76AFC84}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProject1", "TestProject1\TestProject1.csproj", "{FBFE5EEE-A040-423C-950C-7BEE0AF8D788}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,6 +32,10 @@ Global
 		{9ED8EAA7-B84F-B8E0-A377-E30BC76AFC84}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9ED8EAA7-B84F-B8E0-A377-E30BC76AFC84}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9ED8EAA7-B84F-B8E0-A377-E30BC76AFC84}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FBFE5EEE-A040-423C-950C-7BEE0AF8D788}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBFE5EEE-A040-423C-950C-7BEE0AF8D788}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBFE5EEE-A040-423C-950C-7BEE0AF8D788}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBFE5EEE-A040-423C-950C-7BEE0AF8D788}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

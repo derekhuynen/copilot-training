@@ -19,21 +19,19 @@ namespace api.Services
 
     public class OrdersService : IOrdersService
     {
-        private readonly ILogger _logger;
         private readonly string _ordersFilePath;
 
-        public OrdersService(ILoggerFactory loggerFactory)
+        public OrdersService()
         {
-            _logger = loggerFactory.CreateLogger<OrdersService>();
             // Use AppContext.BaseDirectory to point to the output folder.
             _ordersFilePath = Path.Combine(AppContext.BaseDirectory, "orders.json");
         }
+
 
         public List<Order> FetchOrders()
         {
             if (!File.Exists(_ordersFilePath))
             {
-                _logger.LogError($"Orders file not found: {_ordersFilePath}");
                 return new List<Order>();
             }
 
@@ -42,7 +40,6 @@ namespace api.Services
 
             if (orders == null)
             {
-                _logger.LogError($"Failed to deserialize orders from file: {_ordersFilePath}");
                 return new List<Order>();
             }
             return orders;
@@ -60,7 +57,6 @@ namespace api.Services
         {
             if (orders == null || orders.Count == 0)
             {
-                _logger.LogWarning("No orders provided for total amount calculation.");
                 return 0;
             }
 
@@ -70,7 +66,6 @@ namespace api.Services
                 totalAmount += order.TotalAmount;
             }
 
-            _logger.LogInformation($"Total amount calculated: {totalAmount}");
             return totalAmount;
         }
     }

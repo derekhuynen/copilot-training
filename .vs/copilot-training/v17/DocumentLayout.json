@@ -1,0 +1,97 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Derek.Huynen\\dev2\\copilot-training\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FBFE5EEE-A040-423C-950C-7BEE0AF8D788}|TestProject1\\TestProject1.csproj|c:\\users\\derek.huynen\\dev2\\copilot-training\\testproject1\\orderservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBFE5EEE-A040-423C-950C-7BEE0AF8D788}|TestProject1\\TestProject1.csproj|solutionrelative:testproject1\\orderservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1B539FC-1B4E-54AF-B94E-20C1D51FEBBD}|samples\\api\\api.csproj|c:\\users\\derek.huynen\\dev2\\copilot-training\\samples\\api\\service\\ordersservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1B539FC-1B4E-54AF-B94E-20C1D51FEBBD}|samples\\api\\api.csproj|solutionrelative:samples\\api\\service\\ordersservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1B539FC-1B4E-54AF-B94E-20C1D51FEBBD}|samples\\api\\api.csproj|c:\\users\\derek.huynen\\dev2\\copilot-training\\samples\\api\\service\\secondordersservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1B539FC-1B4E-54AF-B94E-20C1D51FEBBD}|samples\\api\\api.csproj|solutionrelative:samples\\api\\service\\secondordersservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 256,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "OrderServiceTest.cs",
+              "DocumentMoniker": "C:\\Users\\Derek.Huynen\\dev2\\copilot-training\\TestProject1\\OrderServiceTest.cs",
+              "RelativeDocumentMoniker": "TestProject1\\OrderServiceTest.cs",
+              "ToolTip": "C:\\Users\\Derek.Huynen\\dev2\\copilot-training\\TestProject1\\OrderServiceTest.cs",
+              "RelativeToolTip": "TestProject1\\OrderServiceTest.cs",
+              "ViewState": "AgIAADUAAAAAAAAAAAAwwDkAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T18:55:38.01Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SecondOrdersService.cs",
+              "DocumentMoniker": "C:\\Users\\Derek.Huynen\\dev2\\copilot-training\\samples\\api\\Service\\SecondOrdersService.cs",
+              "RelativeDocumentMoniker": "samples\\api\\Service\\SecondOrdersService.cs",
+              "ToolTip": "C:\\Users\\Derek.Huynen\\dev2\\copilot-training\\samples\\api\\Service\\SecondOrdersService.cs*",
+              "RelativeToolTip": "samples\\api\\Service\\SecondOrdersService.cs*",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAgwCYAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T16:57:08.276Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 144,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "OrdersService.cs",
+              "DocumentMoniker": "C:\\Users\\Derek.Huynen\\dev2\\copilot-training\\samples\\api\\Service\\OrdersService.cs",
+              "RelativeDocumentMoniker": "samples\\api\\Service\\OrdersService.cs",
+              "ToolTip": "C:\\Users\\Derek.Huynen\\dev2\\copilot-training\\samples\\api\\Service\\OrdersService.cs",
+              "RelativeToolTip": "samples\\api\\Service\\OrdersService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADoAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T16:15:44.353Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
